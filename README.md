@@ -65,9 +65,11 @@ pytest -q
 
 Regenerate the presentation PDF with `python build_presentation.py`.
 
-## Deployment note
+## Deploy to Render
 
-The application is runnable locally and ready to deploy to a Python web host that supports ASGI (for example, a container or an ASGI platform). A public cloud deployment requires a hosting account and deployment target; no external cloud credentials or target were provided in this task.
+The repository includes `render.yaml` for a Render web service. In Render, choose **New + → Blueprint**, connect `shreyas23dev/Week-4`, and deploy the blueprint. Render installs `requirements.txt`, starts Uvicorn on the provided `$PORT`, and checks `/health`. After the first successful deployment, the public service URL can serve the browser form and `/docs` API page. The free instance may sleep when idle and take a short time to wake.
+
+For another ASGI host, use `pip install -r requirements.txt` and `uvicorn app:app --host 0.0.0.0 --port $PORT`.
 
 ## Dataset source
 
