@@ -16,6 +16,8 @@ This is an end-to-end supervised machine-learning application. It trains a Sciki
 - `artifacts/test_metrics.json` — held-out performance metrics.
 - `presentation.pdf` — capstone presentation slides.
 - `presentation_outline.md` and `build_presentation.py` — presentation notes and PDF generator.
+- `week4_report.docx` — Word report for internship submission.
+- `generate_report_docx.py` — regenerates the Word report from saved evaluation metrics.
 
 ## Setup and train
 
