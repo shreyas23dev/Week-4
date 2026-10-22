@@ -20,7 +20,7 @@ This is an end-to-end supervised machine-learning application. It trains a Sciki
 - `artifacts/titanic_survival_model.joblib` — generated fitted model pipeline.
 - `artifacts/model_metadata.json` — generated evaluation and feature metadata.
 - `artifacts/test_metrics.json` — held-out performance metrics.
-- `presentation.pdf` — capstone presentation slides.
+- `presentation.pptx` — capstone presentation slides in PowerPoint format.
 - `presentation_outline.md` and `build_presentation.py` — presentation notes and PDF generator.
 - `week4_report.docx` — Word report for internship submission.
 - `generate_report_docx.py` — regenerates the Word report from saved evaluation metrics.
@@ -71,7 +71,7 @@ Train the model first, then run:
 pytest -q
 ```
 
-Regenerate the presentation PDF with `python build_presentation.py`.
+Regenerate the PowerPoint presentation with `python build_presentation.py`.
 
 ## Deploy to Render
 

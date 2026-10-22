@@ -1,4 +1,4 @@
-"""Build a concise Week 4 capstone slide deck as a PDF."""
+"""Build a concise Week 4 capstone slide deck as a PowerPoint presentation."""
 
 from pathlib import Path
 
@@ -10,7 +10,7 @@ from pptx.util import Inches, Pt
 
 
 BASE_DIR = Path(__file__).resolve().parent
-OUTPUT = BASE_DIR / "presentation.pdf"
+OUTPUT = BASE_DIR / "presentation.pptx"
 NAVY = RGBColor(24, 49, 83)
 BLUE = RGBColor(38, 88, 216)
 LIGHT = RGBColor(239, 246, 255)
@@ -162,8 +162,8 @@ def main():
 
     slide = base_slide(pres, "Results, deployment, and next steps")
     add_bullets(slide, [
-        "The complete workflow is runnable locally; the ASGI API and prediction form are ready for a hosting platform.",
-        "A public deployment needs a selected host, account, and deployment configuration; none is assumed here.",
+        "The FastAPI application is deployed and available at https://week-4-chhg.onrender.com/.",
+        "Health check: /health · Interactive API docs: /docs.",
         "Next steps: add a container, CI checks, model-version metadata, monitoring, and additional fairness review.",
         "Historical training labels make this a learning demonstration only, not a tool for judging real people.",
     ], y=1.8, h=4.5, size=20)
