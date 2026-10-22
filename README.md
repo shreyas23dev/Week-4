@@ -4,6 +4,12 @@ AI Pioneers Internship (Machine Learning Internship) capstone project.
 
 This is an end-to-end supervised machine-learning application. It trains a Scikit-learn classification pipeline, evaluates it on a held-out test set, saves the fitted pipeline with Joblib, and serves predictions from a FastAPI API and a simple browser form.
 
+## Live deployment
+
+- **Application:** https://week-4-chhg.onrender.com/
+- **API documentation:** https://week-4-chhg.onrender.com/docs
+- **Health check:** https://week-4-chhg.onrender.com/health
+
 ## Project layout
 
 - `train_model.py` — preprocessing, training, testing, metrics, and model serialization.
