@@ -1,0 +1,30 @@
+{
+  "model": "RandomForestClassifier",
+  "features": [
+    "age",
+    "sibsp",
+    "parch",
+    "fare",
+    "pclass",
+    "sex",
+    "embarked"
+  ],
+  "numeric_features": [
+    "age",
+    "sibsp",
+    "parch",
+    "fare"
+  ],
+  "categorical_features": [
+    "pclass",
+    "sex",
+    "embarked"
+  ],
+  "target": "survived",
+  "classes": {
+    "0": "not survived",
+    "1": "survived"
+  },
+  "dataset_rows": 891,
+  "test_metrics_file": "test_metrics.json"
+}
